@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-Grey: hsl(217, 12%, 63%);
+  --medium-Grey: hsl(216, 12%, 54%, 0.2);
+  --dark-Blue: hsl(213, 19%, 18%);
+  --very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  padding: 0em;
+  margin: 0em;
+}
+
+body {
+  background-color: var(--very-Dark-Blue);
+  font-family: "Overpass", sans-serif;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 15px;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background-color: var(--dark-Blue);
+  border-radius: 1em;
+  width: 18em;
+  height: fit-content;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  color: var(--light-Grey);
+}
+
+.rate-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-wrapper {
+  background-color: var(--medium-Grey);
+  border-radius: 50%;
+  padding: 0.7em;
+  height: fit-content;
+  display: flex;
+}
+
+.star-wrapper {
+  width: fit-content;
+}
+
+.rate-wrapper > span {
+  color: var(--light-Grey);
+  background-color: var(--medium-Grey);
+  font-weight: 700;
+  padding: 0.8em 1.2em;
+  border-radius: 50%;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+
+  &:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border-radius: 3em;
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  font-weight: 400;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--orange);
+  }
+}
+
+.img {
+  background-image: url(./images//illustration-thank-you.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 120px;
+  align-self: center;
+}
+.status {
+  background-color: var(--medium-Grey);
+  color: var(--orange);
+  align-self: center;
+  padding: 0.5em 0.7em;
+  border-radius: 3em;
+}
+.thank,
+.thank-para {
+  text-align: center;
+}
+
+.active {
+  background-color: var(--light-Grey) !important;
+  color: var(--white) !important;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 23em;
+  }
+}
