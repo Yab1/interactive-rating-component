@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL ](https://github.com/Yab1/interactive-rating-component/tree/main)
+- Solution URL: [Solution URL ](https://www.frontendmentor.io/solutions/interactive-rating-component-w9lz8jbB12)
 - Live Site URL: [Live site](https://yab1.github.io/interactive-rating-component/)
 
 ### Built with
