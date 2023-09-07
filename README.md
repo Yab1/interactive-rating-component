@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](https://github.com/Yab1/interactive-rating-component/blob/main/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL ]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution URL ](https://github.com/Yab1/interactive-rating-component/tree/main)
+- Live Site URL: [Live site](https://yab1.github.io/interactive-rating-component/)
 
 ### Built with
 
