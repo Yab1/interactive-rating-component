@@ -7,6 +7,7 @@ button.addEventListener("click", handleSubmit);
 
 const rateWrapper = document.querySelector(".rate-wrapper");
 const rates = rateWrapper.querySelectorAll("span");
+
 rates.forEach((rate) => {
   rate.addEventListener("click", (e) => handleSelected(e));
 });
@@ -14,11 +15,14 @@ rates.forEach((rate) => {
 const selectedText = document.querySelector(".status");
 const statusSpan = selectedText.querySelector("span");
 
-let count = 0;
+let rate = 0;
 
 function handleSelected(e) {
-  count++;
+  rates.forEach((rate) => {
+    rate.classList.remove("active");
+  });
   e.target.classList.add("active");
+  rate = e.target.innerHTML;
 }
 
 function handleSubmit() {
@@ -26,5 +30,5 @@ function handleSubmit() {
   form.classList.remove("visible");
   feedback.classList.add("visible");
   feedback.classList.remove("hidden");
-  statusSpan.innerHTML = count;
+  statusSpan.innerHTML = rate;
 }
